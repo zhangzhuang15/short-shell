@@ -33,13 +33,13 @@ help:
 run: 
 	@if [[ -z ${c} ]]; then \
 	  echo "Welcome to Short Shell"; \
-	  echo "please run: "\
-	  echo "        make help" \
-	  echo "            or" \
-	  echo "        make" \
-	  echo "get more information" \
+	  echo "please run: ";\
+	  echo "        make help"; \
+	  echo "            or"; \
+	  echo "        make"; \
+	  echo "get more information"; \
 	else \
-	  dir=${shell ls | grep ^${c}-}; \
+	  dir=$$( ls | grep ^${c}- ); \
 	  theme=$${dir#*-}; \
 	  if [[ ${c} == 13 ]]; then \
 	    ${shell} "$${dir}/shell_$${theme}.sh" -p 81 --name husky; \
