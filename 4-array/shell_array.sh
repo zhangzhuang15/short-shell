@@ -20,7 +20,6 @@ echo "array[1]:${array[1]}"
 echo array:${array[*]}
 echo array:${array[@]}
 
-
 # 索引号可以通过变量确定
 index=2
 echo "array[$index]:${array[$index]}"
@@ -40,6 +39,7 @@ echo n: ${n[@]}
 echo n length ${#n[*]}
 
 
-# 将第32行的 逗号 改成 空格， 看看会打印出什么
 
-# 将第32行的（）去掉，看看会打印出什么
+# 将第35行的 逗号 改成 空格， 看看会打印出什么
+
+# 将第35行的（）去掉，看看会打印出什么
