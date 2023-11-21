@@ -22,3 +22,9 @@ readonly num
 # 删除变量，readonly类型变量无法被unset
 # 去掉注释，看看会打印出什么
 # unset num
+
+# 打印4 因为num已经被定义
+echo ${num:-100}
+
+# 打印 100 因为ppt没有被定义
+echo ${ppt:-100}
